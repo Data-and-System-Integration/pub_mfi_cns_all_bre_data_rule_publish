@@ -1,8 +1,8 @@
-<org.drools.workbench.models.guided.dtable.shared.model.GuidedDecisionTable52>
+<decision-table52>
   <tableName>Fix Multi Reason for Brand</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
@@ -10,9 +10,10 @@
   </descriptionCol>
   <metadataCols/>
   <attributeCols>
-    <org.drools.workbench.models.guided.dtable.shared.model.AttributeCol52>
+    <attribute-column52>
       <typedDefaultValue>
         <valueNumeric class="int">0</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
@@ -21,24 +22,25 @@
       <attribute>salience</attribute>
       <reverseOrder>false</reverseOrder>
       <useRowNumber>false</useRowNumber>
-    </org.drools.workbench.models.guided.dtable.shared.model.AttributeCol52>
+    </attribute-column52>
   </attributeCols>
   <conditionPatterns>
-    <org.drools.workbench.models.guided.dtable.shared.model.Pattern52>
+    <Pattern52>
       <factType>pub_cns_combined_flattened_bre</factType>
       <boundName>data</boundName>
       <isNegated>false</isNegated>
       <conditions>
-        <org.drools.workbench.models.guided.dtable.shared.model.ConditionCol52>
+        <condition-column52>
           <hideColumn>false</hideColumn>
           <width>100</width>
           <header>data_ppmonth &lt;</header>
           <constraintValueType>3</constraintValueType>
           <factField>data_ppmonth</factField>
-          <fieldType>java.lang.Integer</fieldType>
+          <fieldType>Integer</fieldType>
           <operator>&lt;</operator>
-        </org.drools.workbench.models.guided.dtable.shared.model.ConditionCol52>
-        <org.drools.workbench.models.guided.dtable.shared.model.ConditionCol52>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
           <hideColumn>false</hideColumn>
           <width>100</width>
           <header>data_multi_choice_codes_01 contains</header>
@@ -46,9 +48,13 @@
           <factField>data_multi_choice_codes_01</factField>
           <fieldType>Collection</fieldType>
           <operator>contains</operator>
-        </org.drools.workbench.models.guided.dtable.shared.model.ConditionCol52>
+          <parameters/>
+        </condition-column52>
       </conditions>
-    </org.drools.workbench.models.guided.dtable.shared.model.Pattern52>
+      <window>
+        <parameters/>
+      </window>
+    </Pattern52>
   </conditionPatterns>
   <actionCols>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
@@ -81,6 +87,33 @@
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
   </actionCols>
+  <auditLog>
+    <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
+      <acceptedTypes>
+        <entry>
+          <string>INSERT_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>INSERT_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>UPDATE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+      </acceptedTypes>
+    </filter>
+    <entries/>
+  </auditLog>
   <imports>
     <imports/>
   </imports>
@@ -89,547 +122,582 @@
   <hitPolicy>NONE</hitPolicy>
   <data>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">0</valueNumeric>
+      <value>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_1_Rule 1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">21</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000456</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">1</valueNumeric>
+      <value>
+        <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_2_Rule 2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">20</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000456</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">2</valueNumeric>
+      <value>
+        <valueNumeric class="int">3</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_3_Rule 3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">19</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000444</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000456</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">3</valueNumeric>
+      <value>
+        <valueNumeric class="int">4</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_4_Rule 4</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">18</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000445</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000445</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">4</valueNumeric>
+      <value>
+        <valueNumeric class="int">5</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_5_Rule 5</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">17</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000446</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000446</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">5</valueNumeric>
+      <value>
+        <valueNumeric class="int">6</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_6_Rule 6</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">16</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000447</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000447</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">6</valueNumeric>
+      <value>
+        <valueNumeric class="int">7</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_7_Rule 7</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">15</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000448</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000448</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">7</valueNumeric>
+      <value>
+        <valueNumeric class="int">8</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_8_Rule 8</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">14</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000449</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000449</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">8</valueNumeric>
+      <value>
+        <valueNumeric class="int">9</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_9_Rule 9</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">13</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000450</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000450</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">9</valueNumeric>
+      <value>
+        <valueNumeric class="int">10</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_10_Rule 10</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">12</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000451</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000451</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">10</valueNumeric>
+      <value>
+        <valueNumeric class="int">11</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_11_Rule 11</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">11</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000452</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000452</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">11</valueNumeric>
+      <value>
+        <valueNumeric class="int">12</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_12_Rule 12</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">10</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000453</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000453</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">12</valueNumeric>
+      <value>
+        <valueNumeric class="int">13</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_13_Rule 13</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">9</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000454</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000454</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">13</valueNumeric>
+      <value>
+        <valueNumeric class="int">14</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_14_Rule 14</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">8</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000455</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000455</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">14</valueNumeric>
+      <value>
+        <valueNumeric class="int">15</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_15_Rule 15</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">7</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000456</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000456</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">15</valueNumeric>
+      <value>
+        <valueNumeric class="int">16</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_16_Rule 16</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">6</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000457</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143000457</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
     <list>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-        <valueNumeric class="int">16</valueNumeric>
+      <value>
+        <valueNumeric class="int">17</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>Rule_11_Fix Multi Reason for Brand_case_17_Rule 17</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueNumeric class="int">5</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>553</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143005007</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
-      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
+      <value>
         <valueString>1143005007</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      </value>
     </list>
   </data>
-</org.drools.workbench.models.guided.dtable.shared.model.GuidedDecisionTable52>
+</decision-table52>
