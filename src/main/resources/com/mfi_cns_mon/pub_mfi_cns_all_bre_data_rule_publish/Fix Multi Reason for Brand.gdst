@@ -50,34 +50,22 @@
           <operator>contains</operator>
           <parameters/>
         </condition-column52>
+        <condition-column52>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>test</header>
+          <constraintValueType>5</constraintValueType>
+          <factField></factField>
+          <fieldType></fieldType>
+          <operator>--- please choose ---</operator>
+          <parameters/>
+        </condition-column52>
       </conditions>
       <window>
         <parameters/>
       </window>
+      <entryPointName></entryPointName>
     </Pattern52>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Assign data.countListElements to data_multi_choice_codes_01</header>
-      <constraintValueType>1</constraintValueType>
-      <parameters/>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>data.countListElements(data.convertVectorToString(data.getData_multi_choice_codes_01()))== 0 </text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>100</width>
-          <header>Assign data.countListElements to data_multi_choice_codes_01</header>
-          <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
-          <parameters/>
-          <varName></varName>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
   <actionCols>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
@@ -173,9 +161,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>data.countListElements(data.convertVectorToString(data.getData_multi_choice_codes_01()))== 0</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -213,9 +200,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -253,9 +239,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -293,9 +278,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -333,9 +317,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -373,9 +356,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -413,9 +395,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -453,9 +434,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -493,9 +473,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -533,9 +512,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -573,9 +551,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -613,9 +590,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -653,9 +629,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -693,9 +668,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -733,9 +707,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -773,9 +746,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -813,9 +785,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
