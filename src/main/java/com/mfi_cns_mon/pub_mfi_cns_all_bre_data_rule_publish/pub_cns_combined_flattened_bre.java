@@ -19129,4 +19129,24 @@ private java.lang.String panelist_panelist_attr_100;
        
     }
 
+ public ArrayList<String> convertVectorToString(java.util.List inputList){
+ ArrayList<String> strList = new ArrayList<String>();
+ 
+ if(inputList != null && inputList.size() != 0){
+  String combineVectorStr = "";
+ 
+  for(Object str : inputList){
+   combineVectorStr = combineVectorStr + str + "~";
+  }
+  strList.add(combineVectorStr);
+  return strList;
+ }
+ return strList;
+}
+
+public int countListElements(java.util.List lst){
+lst.removeAll(java.util.Arrays.asList("", null));
+     return lst.size();
+}
+
 }
