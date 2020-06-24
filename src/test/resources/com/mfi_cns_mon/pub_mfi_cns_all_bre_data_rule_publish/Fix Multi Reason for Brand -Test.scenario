@@ -13,7 +13,7 @@
         </field-data>
         <field-data>
           <name>data_multi_choice_codes_01</name>
-          <value>1143000144</value>
+          <value>1143000144,1143000145,1143000146</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -21,17 +21,17 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>182</executionTimeResult>
-      <numberOfRulesFired>8</numberOfRulesFired>
+      <executionTimeResult>1380</executionTimeResult>
+      <numberOfRulesFired>9</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>data_multi_choice_codes_01</fieldName>
           <expected>1143000456</expected>
-          <actualResult>[1143000144, 1143000456]</actualResult>
+          <actualResult>[1143000451, 1143000451]</actualResult>
           <successResult>false</successResult>
-          <explanation>[pub_cns_combined_flattened_bre] field [data_multi_choice_codes_01] was [[1143000144, 1143000456]] expected [1143000456].</explanation>
+          <explanation>[pub_cns_combined_flattened_bre] field [data_multi_choice_codes_01] was [[1143000451, 1143000451]] expected [1143000456].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -40,7 +40,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2020-06-24 06:29:03.375 UTC</lastRunResult>
+  <lastRunResult>2020-06-24 07:22:32.934 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.mfi_cns_mon.pub_mfi_cns_all_bre_data_rule_publish</packageName>
