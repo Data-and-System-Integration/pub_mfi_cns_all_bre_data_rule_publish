@@ -1,0 +1,13 @@
+<scenario>
+  <name>Fix Multi Reason for Brand -Test</name>
+  <maxRuleFirings>100000</maxRuleFirings>
+  <globals/>
+  <fixtures/>
+  <rules/>
+  <inclusive>false</inclusive>
+  <packageName>com.mfi_cns_mon.pub_mfi_cns_all_bre_data_rule_publish</packageName>
+  <imports>
+    <imports/>
+  </imports>
+  <ksessions/>
+</scenario>
