@@ -165,7 +165,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>(data.countListElements(data.convertVectorToString(data.getData_multi_choice_codes_01()))) == 0 </valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
